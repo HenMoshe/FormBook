@@ -1,7 +1,7 @@
 const express = require('express')
+require('dotenv').config()
 const { connect } = require('./DB')
 const cookieParser = require('cookie-parser')
-require('dotenv').config()
 const path = require('path')
 const userRouter = require('./userRouter')
 const formRouter = require('./formRouter')
