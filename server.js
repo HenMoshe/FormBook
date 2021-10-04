@@ -16,5 +16,5 @@ connect()
     .then(() => {
         userRouter(app)
         formRouter(app)
-        app.listen(3001 || process.env.PORT)
+        app.listen(process.env.PORT, '0.0.0.0')
     })
