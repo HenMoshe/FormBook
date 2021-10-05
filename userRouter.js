@@ -77,6 +77,7 @@ module.exports = function userRouter(app) {
     app.post('/userstats',async function (req,res){
         try{
         const count = await users.userStats()
+        console.log(count)
         res.send(String(count))
     }
         catch(error){
