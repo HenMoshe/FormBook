@@ -70,7 +70,7 @@ module.exports = function formRouter(app) {
         res.send(saver)}
         catch(error){console.error(error)}
     })
-    app.get('/sitestats',async function (req,res){
+    app.post('/sitestats',async function (req,res){
         try{
         const count = await forms.formStats()
         res.send(String(count))
